@@ -60,7 +60,7 @@ export default function Footer() {
                         />
                     </div>
                 </Link> :
-                    <div className="w-[19vmin] sm:w-[9vmin] aspect-[74/74] relative active:scale-90 transition-transform duration-200">
+                    <div className="w-[16vmin] sm:w-[9vmin] aspect-[74/74] relative active:scale-90 transition-transform duration-200">
                         <p className=" absolute bottom-[-25%] left-1/2 -translate-x-1/2 font-normal text-white text-[1.2vmax] sm:text-[1.2vmin] text-center">Play</p>
                         <Image
                             src="/image/jet_menu_game_off.png"
