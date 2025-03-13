@@ -127,46 +127,46 @@ export default function ClaimTimer() {
                 transition={{ duration: 0.3 }}
             >
                 <div className="w-full flex justify-center items-center relative">
-                    <div className="w-[28vmax] max-w-[450px] aspect-[285/285] relative">
+                    <div className="w-[28vmax] max-w-[450px] aspect-[428/447] relative">
                         <Image
-                            src="/image/balancebtn.png"
+                            src="/image/jet_balance.png"
                             alt="main logo"
                             fill
                             style={{ objectFit: "cover" }}
                         />
-                        <p className={` absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-[2.8vmax] sm:text-[2.2vmax]
-             [-webkit-text-stroke:1px_black] ${libreCaslon.className} font-bold mt-1 `}>{n2o >= 1000000 ? `${n2o / 1000000}m` : n2o >= 1000 ? `${n2o / 1000}k` : n2o}</p>
+                        <p className={` absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#05FF6D] text-[2.8vmax] sm:text-[2.2vmax]
+             [-webkit-text-stroke:0.6px_black]  mt-1 `}>{n2o >= 1000000 ? `${n2o / 1000000}m` : n2o >= 1000 ? `${n2o / 1000}k` : n2o}</p>
                     </div>
                 </div>
                 <div className="w-full flex justify-center items-center relative">
                     <div className="w-[78%] sm:w-[80%] aspect-[510/105] relative flex justify-start">
-                        <div className=" absolute w-full aspect-[510/105]  ">
+                        <div className=" absolute w-full aspect-[510/127]  ">
                             <Image
-                                src="/image/farmmanabar.png"
+                                src="/image/farmjetbar.png"
                                 alt="mana bar"
                                 fill
                                 style={{ objectFit: "cover" }}
                             />
                         </div>
-                        <p className=" absolute top-1/3 -translate-y-1/2 right-[5%] text-white text-[1.5vmax] sm:text-[1vmax] [-webkit-text-stroke:0.2px_black]">{formatTime(time)}</p>
-                        {onClaim ? <p onClick={startTimer} className=" absolute top-[70%] -translate-y-1/2 right-[5%] text-[#DD9300] text-[1.5vmax] sm:text-[1vmax] [-webkit-text-stroke:0.2px_black]
+                        <p className=" absolute top-[36%] -translate-y-1/2 right-[6%] text-white text-[1.5vmax] sm:text-[0.8vmax] [-webkit-text-stroke:0.2px_black]">{formatTime(time)}</p>
+                        {onClaim ? <p onClick={startTimer} className=" absolute top-[75%] -translate-y-1/2 right-[6%] text-[#34DD00] text-[1.5vmax] xs:text-[1.35vmax] sm:text-[0.8vmax] [-webkit-text-stroke:0.2px_black]
                         active:scale-90 transition-transform duration-200">Claim now</p>
                             :
-                            <p onClick={startTimer} className=" absolute top-[70%] -translate-y-1/2 right-[5%] text-[#646464] text-[1.5vmax] sm:text-[1vmax] [-webkit-text-stroke:0.2px_black]
+                            <p onClick={startTimer} className=" absolute top-[70%] -translate-y-1/2 right-[5%] text-[#646464] text-[1.5vmax] xs:text-[1.35vmax] sm:text-[0.8vmax] [-webkit-text-stroke:0.2px_black]
                         active:scale-90 transition-transform duration-200">Claim now</p>}
                         <div className=" h-full w-[68%] relative flex flex-col justify-evenly py-[2%] items-end  ">
-                            <p className=" w-[65%] text-center text-[#FFA15C] text-[3.2vmin] sm:text-[1.5vmin] [-webkit-text-stroke:0.3px_black]">Farming 2000 MANA</p>
-                            <div className="w-[65%] h-[35%] border border-[#EB9F15] relative ">
-                                <div className="w-full bg-[#DD9300] h-full absolute left-0" style={{ width: progressWidth }}></div>
+                            <p className=" w-[65%] text-center text-white text-[3.2vmin] sm:text-[1.5vmin] [-webkit-text-stroke:0.3px_black] mt-1">Farming 2000 JET</p>
+                            <div className="w-[65%] h-[35%] border border-[#01FF56] relative ">
+                                <div className="w-full bg-[#18FE3B] h-full absolute left-0" style={{ width: progressWidth }}></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <Link href="/balance" className="w-[85%] sm:w-[85%] aspect-[530/145] flex justify-center items-center relative active:scale-90 transition-transform duration-200">
-                    <p className=" ml-[10%] text-[#F9BC2F] text-[4vmin] sm:text-[1.8vmin] z-10">Now Get More Magic Water!!</p>
+                <Link href="/balance" className="w-[85%] sm:w-[85%] aspect-[510/102] flex justify-center items-center relative active:scale-90 transition-transform duration-200">
+                    <p className=" ml-[15%] mb-[2%] bg-gradient-to-r from-[#F92F2F] to-[#E7EAFF] bg-clip-text text-transparent text-[3vmin] sm:text-[1.3vmin] z-10">Now Get More Sky Licence!!</p>
                     <Image
-                        src="/image/getmanaIcon.png"
+                        src="/image/getjetbar.png"
                         alt="main logo"
                         fill
                         style={{ objectFit: "cover" }}

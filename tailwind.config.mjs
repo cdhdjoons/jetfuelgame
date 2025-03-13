@@ -17,6 +17,9 @@ export default {
       fontFamily: {
         franklin: ["var(--font-franklin-gothic)", "sans-serif"],
       },
+      screens: {
+        'xs': {'max': '345px'}, // 345px 이하일 때 적용
+      },
     },
   },
   plugins: [],
