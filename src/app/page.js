@@ -6,7 +6,7 @@ import ClaimTimer from "./components/claimtimer";
 export default function Home() {
   return (
     <div className=" w-full h-full">
-      <div className=" w-full h-full max-w-[500px] relative flex flex-col justify-evenly " >
+      <div className=" w-full h-full max-w-[500px] pt-[10%] relative flex flex-col justify-evenly " >
         <div className="w-full flex justify-center items-center relative">
           <div className="w-[45vmax] max-w-[400px] aspect-[543/183] relative ">
             <Image

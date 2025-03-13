@@ -13,6 +13,8 @@ export default {
         mainRed: 'rgb(160, 0, 0, 0.8)',
         footerBg: 'rgb(0, 0, 0, 0.5)',
         balanceBg: 'rgb(0, 0, 0, 0.7)',
+        taskBg: 'rgb(2, 116, 116, 0.08)',
+        taskBg2: 'rgb(116, 2, 65, 0.08)',
       },
       fontFamily: {
         franklin: ["var(--font-franklin-gothic)", "sans-serif"],

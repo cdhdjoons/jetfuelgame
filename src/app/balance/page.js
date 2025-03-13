@@ -68,49 +68,49 @@ export default function Balance() {
       >
         <div className="bg-balanceBg w-full h-full max-w-[500px] relative flex flex-col justify-evenly " >
           <div className=" w-full flex justify-center items-center relative mb-[5%]">
-            <div className="w-[35vmax] max-w-[450px] aspect-[515/458] relative ">
+            <div className="w-[35vmax] max-w-[450px] aspect-[546/401] relative ">
               <Image
-                src="/image/balancelogo.png"
+                src="/image/jet_balancelogo.png"
                 alt="main logo"
                 layout="fill"
                 objectFit="cover"
               />
             </div>
             <div className=" flex justify-center w-full absolute bottom-[-11%] sm:bottom-[-9%]">
-              <div className=" w-[80%] aspect-[483/122] relative">
+              <div className=" w-[80%] aspect-[501/113] relative">
                 <Image
-                  src="/image/resourceinfo.png"
+                  src="/image/jet_resourceinfo.png"
                   alt="ticketIcon"
                   layout="fill"
                   objectFit="cover"
                 />
-                <p className="mt-[2px] absolute right-[18%] top-1/2 -translate-y-1/2 text-white text-[3vmax] sm:text-[2.2vmin] [-webkit-text-stroke:0.5px_black]">{n2o >= 1000000 ? `${n2o / 1000000}m` : n2o >= 1000 ? `${n2o / 1000}k` : n2o}</p>
-                <p className="mt-[2px] absolute left-[25%] top-1/2 -translate-y-1/2 text-white text-[3vmax] sm:text-[2.2vmin] [-webkit-text-stroke:0.4px_black]">{tickets}</p>
+                <p className="mt-[2px] absolute right-[18%] top-[55%] -translate-y-1/2 text-white text-[2.5vmax] xs:text-[2.3vmax] sm:text-[2.2vmin] [-webkit-text-stroke:0.5px_black]">{n2o >= 1000000 ? `${n2o / 1000000}m` : n2o >= 1000 ? `${n2o / 1000}k` : n2o}</p>
+                <p className="mt-[2px] absolute left-[25%] top-[55%] -translate-y-1/2 text-white text-[2.5vmax] xs:text-[2.3vmax] sm:text-[2.2vmin] [-webkit-text-stroke:0.4px_black]">{tickets}</p>
               </div>
             </div>
           </div>
-          <p className="w-full text-center text-[5vmax] sm:text-[5vmin] -rotate-2
-        bg-gradient-to-r from-[#F9BC2F] via-[#FED9A5] to-[#EB9F15] bg-clip-text text-transparent [-webkit-text-stroke:1px_black] ">Get Magic Water</p>
+          <p className="w-full text-center text-[4.3vmax] xs:text-[4vmax] sm:text-[4.5vmin] -rotate-2
+        bg-gradient-to-r from-[#57F92F] via-[#A5FEA5] to-[#1560EB] bg-clip-text text-transparent [-webkit-text-stroke:1px_black] ">Get Sky Licence</p>
           <div className=" w-full py-[1vmin] flex gap-3 flex-col items-center justify-center">
-            <div onClick={() => getTicket(1, 500)} className=" w-[36vmax] sm:w-[40vmin] aspect-[486/146] relative active:scale-90 transition-transform duration-200 ">
+            <div onClick={() => getTicket(1, 500)} className=" w-[36vmax] sm:w-[40vmin] aspect-[501/161] relative active:scale-90 transition-transform duration-200 ">
               <Image
-                src="/image/water1.png"
+                src="/image/sky1.png"
                 alt="meatIcon"
                 layout="fill"
                 objectFit="cover"
               />
             </div>
-            <div onClick={() => getTicket(3, 1300)} className="w-[36vmax] sm:w-[40vmin] aspect-[486/146] relative active:scale-90 transition-transform duration-200 ">
+            <div onClick={() => getTicket(3, 1300)} className="w-[36vmax] sm:w-[40vmin] aspect-[501/161] relative active:scale-90 transition-transform duration-200 ">
               <Image
-                src="/image/water2.png"
+                src="/image/sky2.png"
                 alt="meatIcon"
                 layout="fill"
                 objectFit="cover"
               />
             </div>
-            <div onClick={() => getTicket(5, 2000)} className="w-[36vmax] sm:w-[40vmin] aspect-[486/146] relative active:scale-90 transition-transform duration-200 ">
+            <div onClick={() => getTicket(5, 2000)} className="w-[36vmax] sm:w-[40vmin] aspect-[501/161] relative active:scale-90 transition-transform duration-200 ">
               <Image
-                src="/image/water3.png"
+                src="/image/sky3.png"
                 alt="meatIcon"
                 layout="fill"
                 objectFit="cover"
@@ -118,17 +118,6 @@ export default function Balance() {
             </div>
           </div>
           {pop && (
-            // <div className="popup-container fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center transition-opacity duration-300">
-            //   <div className="popup bg-white p-6 rounded-lg shadow-lg w-4/5 sm:w-1/3">
-            //     <h3 className="text-xl font-semibold text-center text-red-500">Warning</h3>
-            //     <p className="mt-2 text-2xl text-center text-gray-700">Need more N2O!</p>
-            //     <button
-            //       onClick={() => setPop(false)}
-            //       className="popup-action-btn mt-4 w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600">
-            //       ok
-            //     </button>
-            //   </div>
-            // </div>
             <div className=" absolute top-[10px] left-1/2 -translate-x-1/2 z-[999] "><Alert severity="error">Need more N2O.</Alert></div>
           )}
         </div>

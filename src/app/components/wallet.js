@@ -71,18 +71,18 @@ export default function Wallet() {
 
                 {onWallet ? <div className="absolute top-[10px] z-[999]"><Alert severity="success">Connect Wallet Complete.</Alert></div> : ''}
                 {disabledWalletTask ?
-                    <div className="w-[38vmax] sm:w-[22vmax] aspect-[489/147] relative active:scale-90 transition-transform duration-200">
+                    <div className=" bg-taskBg2 w-[36vmax] sm:w-[20vmax] aspect-[438/101] relative active:scale-90 transition-transform duration-200">
                         <Image
-                            src="/image/taskconnect_off.png"
+                            src="/image/jet_taskconnect_off.png"
                             alt="main logo"
                             layout="fill"
                             objectFit="cover"
                         />
                     </div>
                     :
-                    <div onClick={connectWallet} className="w-[38vmax] sm:w-[22vmax] aspect-[489/147] relative active:scale-90 transition-transform duration-200">
+                    <div onClick={connectWallet} className=" bg-taskBg2 w-[36vmax] sm:w-[20vmax] aspect-[438/101] relative active:scale-90 transition-transform duration-200">
                         <Image
-                            src="/image/taskconnect.png"
+                            src="/image/jet_taskconnect.png"
                             alt="main logo"
                             layout="fill"
                             objectFit="cover"
