@@ -144,7 +144,7 @@ export default function DailyTask() {
                                 />
                             </div>
                             {disabledDaily[1] ?
-                                <a href="https://x.com/MSDG_official" target="_blank" rel="noopener noreferrer">
+                                <a href="https://x.com/JFT_official_X" target="_blank" rel="noopener noreferrer">
                                     <div onClick={() => dailyHandleClick(1, 1000)} className=" bg-taskBg w-[36vmax] sm:w-[20vmax] aspect-[439/101] relative active:scale-90 transition-transform duration-200">
                                         <Image
                                             src="/image/jet_dailyreward2.png"
@@ -179,7 +179,7 @@ export default function DailyTask() {
                                 <p className="absolute bottom-[5%] left-[8%] text-[2vmax] sm:text-[1.3vmax] text-[#FFB625] font-normal">EARN 1 time</p>
 
                             </div>
-                            {disabledTask[0] ? <a href="https://x.com/MSDG_official" target="_blank" rel="noopener noreferrer">
+                            {disabledTask[0] ? <a href="https://x.com/JFT_official_X" target="_blank" rel="noopener noreferrer">
                                 <div onClick={() => handleClick(0, 1000)} className=" bg-taskBg2 w-[36vmax] sm:w-[20vmax] aspect-[438/101] relative active:scale-90 transition-transform duration-200">
                                     <Image
                                         src="/image/jet_taskx.png"
