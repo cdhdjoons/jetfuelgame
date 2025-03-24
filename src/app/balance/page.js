@@ -118,7 +118,7 @@ export default function Balance() {
             </div>
           </div>
           {pop && (
-            <div className=" absolute top-[10px] left-1/2 -translate-x-1/2 z-[999] "><Alert severity="error">Need more N2O.</Alert></div>
+            <div className=" absolute top-[10px] left-1/2 -translate-x-1/2 z-[999] "><Alert severity="error">Need more Sky Licence.</Alert></div>
           )}
         </div>
       </motion.div>
